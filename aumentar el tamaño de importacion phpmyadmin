@@ -1,0 +1,9 @@
+//direccion
+	/etc/php/7.0/apache2/php.ini
+
+post_max_size 300M
+
+upload_max_filesize 300M
+
+//restart el servidor 
+	/etc/init.d/apache2 restart

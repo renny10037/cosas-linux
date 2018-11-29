@@ -1,0 +1,4 @@
+//instalar composer
+    curl -sS https://getcomposer.org/installer | php
+// mover a la raiz
+sudo mv composer.phar /usr/local/bin/composer

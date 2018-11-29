@@ -1,0 +1,25 @@
+//apache2
+    sudo apt-get install apache2
+/mysql
+    sudo apt-get install mysql-server
+//php 7.0
+sudo apt-get install php7.0
+//phpmyadmin
+
+//instalar todos en uno apache2,php,mysql,phpmyadmin 
+    sudo apt-get install lamp-server^ phpmyadmin
+
+//error de mysql ERROR 1698 (28000): Access denied for user 'root'@'localhost'
+
+Option 2: (replace YOUR_SYSTEM_USER with the username you have)
+
+$ sudo mysql -u root # I had to use "sudo" since is new installation
+
+mysql> USE mysql;
+mysql> CREATE USER 'YOUR_SYSTEM_USER'@'localhost' IDENTIFIED BY '';
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'YOUR_SYSTEM_USER'@'localhost';
+mysql> UPDATE user SET plugin='auth_socket' WHERE User='YOUR_SYSTEM_USER';
+mysql> FLUSH PRIVILEGES;
+mysql> exit;
+
+$ service mysql restart

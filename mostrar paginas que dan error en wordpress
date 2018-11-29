@@ -1,0 +1,5 @@
+//direccion 
+etc/apache2/apache2.config
+
+sudo a2enmod rewrite
+sudo /etc/init.d/apache2 restart

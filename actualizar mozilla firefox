@@ -1,0 +1,16 @@
+Para actualizar Firefox a su última versión en las distribuciones Ubuntu, Kubuntu, Debian… solo tenéis que abrir el terminal y ejecutar los siguientes comandos:
+ 
+Añadir el repositorio de Firefox:
+sudo add-apt-repository ppa:mozillateam/firefox-next
+
+Para actualizar los repositorios:
+sudo apt-get update
+
+Para instalar la última versión de Firefox:
+sudo apt-get install firefox
+
+Para instalarle el idioma español:
+sudo apt-get install firefox-locale-es
+ 
+Para actualizar Firefox a la última versión y a la vez el resto de programas:
+sudo apt-get upgrade

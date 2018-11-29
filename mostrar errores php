@@ -1,0 +1,7 @@
+etc/php/apache2/php.ini
+cambiar display_errors = Off linea 462
+a display_errors = On
+
+luego 
+
+sudo service apache2 restart

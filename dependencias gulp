@@ -1,0 +1,20 @@
+//gulp local
+	sudo npm install gulp --save-dev
+// sass
+	npm install node-sass gulp-sass --save-dev
+// watch
+	npm install --save-dev gulp-watch
+// minificar js
+	npm install --save-dev gulp-minify
+// minificar css
+	npm install gulp-cssnano --save-dev
+// autoprefixer
+	npm install --save-dev gulp-autoprefixer
+// unir media screen
+	npm install --save-dev gulp-group-css-media-queries
+// minificar html
+	npm install --save gulp-htmlmin
+
+//unir archivos en uno solo
+	npm install --save-dev gulp-concat
+

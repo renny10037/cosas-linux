@@ -1,0 +1,6 @@
+//git
+    sudo apt-get install git
+//configurando nombre de usuario
+    git config --global user.name ""
+// configurando email
+    git config --global user.email ""
