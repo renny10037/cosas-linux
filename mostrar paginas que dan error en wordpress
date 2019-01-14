@@ -1,5 +1,5 @@
 //direccion 
 etc/apache2/apache2.config
-
+linea 160 AllowOverride None cambiar por AllowOverride All
 sudo a2enmod rewrite
 sudo /etc/init.d/apache2 restart
