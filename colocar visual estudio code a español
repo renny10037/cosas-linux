@@ -1,0 +1,6 @@
+instalar paquete
+(Ctrl+P) ext install MS-CEINTL.vscode-language-pack-es
+
+luego Ctrl+Shift+P
+escribir  config
+cambiar locale”:"en" por locale”:"es"
