@@ -1,0 +1,47 @@
+PASO 1. ACCEDER A PHPMYADMIN
+Si habéis realizado la copia de seguridad, como recomendábamos antes, ya habéis accedido a la herramienta phpMyAdmin por lo que simplemente debéis seguir los mismos pasos para acceder nuevamente. En caso contrario podéis seguir estos pasos para acceder a phpMyAdmin:
+
+1. Desde tu área de cliente dirígete a “Hostings > Mis planes”
+
+2. Pulsa sobre el alojamiento al que deseas acceder
+
+3. Y ve a la pestaña “Bases de datos” que hay en la columna izquierda
+
+4. Aquí verás las bases de datos creadas y a la derecha de ellas el enlace “Admin”, púlsalo para acceder a la base de datos en la que tienes el WordPress instalado.
+
+PASO 2. CAMBIAR LA URL DE WORDPRESS
+Ya dentro de phpMyAdmin nos dirigiremos al apartado SQL” que hay en la parte superior.
+
+phpmyadmin sql
+
+Desde aquí vamos a lanzar las consultas SQL que se encargarán de cambiar la URL de nuestro WordPress:
+
+Nota: Si has modificado los prefijos de tus tablas deberás indicar los tuyos, en nuestros ejemplos usaremos los que vienen por defecto: “wp_”.
+
+En las sentencias siguientes deberás modificar las URL 'http://www.dominioactual.com' por la URL que usas actualmente y 'http://www.dominionuevo.com' por la URL que deseas configurar.
+
+1. La primera sentencia que vamos a ejecutar será la encargada de actualizar la tabla wp_options:
+
+UPDATE wp_options SET option_value = replace(option_value, 'http://www.dominioactual.com', 'http://www.dominionuevo.com') WHERE option_name = 'home' OR option_name = 'siteurl';
+
+Una vez introducida la sentencia SQL pulsa en “Continuar” para que se ejecute y realice los cambios.
+
+2. Acto seguido vamos a modificar las URL de páginas y las entradas:
+
+UPDATE wp_posts SET guid = replace(guid, 'http://www.dominioactual.com', 'http://www.dominionuevo.com');
+
+Y pulsamos nuevamente en “Continuar” para ejecutarla.
+
+3. La siguiente sentencia es para actualizar los enlaces del contenido:
+
+UPDATE wp_posts SET post_content = replace(post_content, 'http://www.dominioactual.com', 'http://www.dominionuevo.com');
+
+4. Y la última sentencia es para modificar las URL de los custom fields:
+
+UPDATE wp_postmeta SET meta_value = replace(meta_value, 'http://www.dominioactual.com', 'http://www.dominionuevo.com');
+
+Con estos pasos habrás modificado correctamente la URL que usa tu Wordpress.
+
+
+
+https://www.neoguias.com/cambiar-la-url-de-phpmyadmin/
