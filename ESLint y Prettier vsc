@@ -1,0 +1,25 @@
+Configurar ESLint y Prettier en VSCode para un React Project
+link: https://www.mclibre.org/consultar/informatica/lecciones/vsc-personalizacion.html
+
+
+
+instalamos las extensiones de prettier y eslint.
+  npm i prettier eslint-config-prettier eslint-plugin-prettier -D
+  
+  
+Finalmente en la raíz de tu proyecto crea un archivo llamado .eslintrc y añade el siguiente contenido.
+
+{  
+  "extends": ["react-app", "plugin:prettier/recommended"]
+}
+
+Nos vamos a la sección de instalar extensiones y buscamos ESLint y Prettier para finalmente darle click en install.
+
+pegar esto es la configuraciòn de visual estudio code
+
+"editor.formatOnPaste": true,
+"editor.formatOnSave": true,
+"editor.formatOnType": true,
+"prettier.eslintIntegration": true
+
+y listo
