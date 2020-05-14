@@ -1,0 +1,10 @@
+Poner Permisos de Carpetas a 755 y de Archivos a 644 dentro de un Directorio
+
+link: https://fututel.com/es/blog/2476-poner-permisos-de-carpetas-a-755-y-de-archivos-a-644-dentro-de-un-directorio
+
+Lo primero que debe hacer es ubicarse dentro del directorio web del sistema operativo
+
+Para configurarle permisos de 755 a todas las carpetas:
+  find * -type d -print0 | xargs -0 chmod 0755
+Para configurarle permisos de 644 a todos los archivos:
+  find . -type f -print0 | xargs -0 chmod 0644
