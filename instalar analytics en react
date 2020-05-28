@@ -1,0 +1,10 @@
+link:https://www.it-swarm.dev/es/reactjs/anadiendo-google-analytics-react/837531488/
+
+instalar:
+     npm install react-ga --save
+     
+     
+import ReactGA from 'react-ga';
+ReactGA.initialize('Your Unique ID');
+
+ReactGA.pageview(window.location.pathname + window.location.search);
