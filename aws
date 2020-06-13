@@ -14,5 +14,8 @@ conectandose a instancia de aws desde linux
         
   sudo su -> nos volvemos root en la maquina
 
+Actualizar s.o
+   yum update
+
 Instalar git
    yum install git
