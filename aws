@@ -13,3 +13,6 @@ conectandose a instancia de aws desde linux
         ___|\___|___|
         
   sudo su -> nos volvemos root en la maquina
+
+Instalar git
+   yum install git
