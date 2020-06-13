@@ -11,3 +11,5 @@ conectandose a instancia de aws desde linux
       __|  __|_  )
          _|  (     /   Amazon Linux AMI
         ___|\___|___|
+        
+  sudo su -> nos volvemos root en la maquina
