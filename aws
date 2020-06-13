@@ -1,0 +1,13 @@
+conectandose a instancia de aws desde linux
+   ssh -i nombreLlave.pem ec2-user@ipMaquinaAWS
+   
+   si te sale esto error debe agregar sudo
+     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+     @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   
+   sudo ssh -i nombreLlave.pem ec2-user@ipMaquinaAWS
+   si te sale esto. la conexion fue creada
+      __|  __|_  )
+         _|  (     /   Amazon Linux AMI
+        ___|\___|___|
