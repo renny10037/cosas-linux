@@ -17,5 +17,8 @@ conectandose a instancia de aws desde linux
 Actualizar s.o
    yum update
 
+Instalar editor de codigo emacs
+   yum install emacs -y (-y con eso no te preguntar en aceptar las cosas)
+   
 Instalar git
    yum install git
