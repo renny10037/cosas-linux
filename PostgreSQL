@@ -1,0 +1,9 @@
+Ubuntu
+Instalar el paquete de postgresql:
+  sudo apt-get install postgresql
+  
+interfaz gráfica de postgresql, usa el siguiente comando:
+  sudo apt-get install pgadmin3
+  
+  
+para mas información: https://doc.odoo.com/7.0/es/install/linux/postgres/
