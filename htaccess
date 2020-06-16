@@ -8,4 +8,7 @@ redirect http to https
 bloquear navegación de directorio
   Options All -Indexes
 
+redireccionamiento 301 de una página a otra
+  redirectMatch 301 ^(.*)$ http://dominiodeejemplo.com$1
+
 para mas seguridad en wordpress vivitar:https://www.ebooz.com/trucos-con-htaccess-para-aumentar-la-seguridad-en-wordpress/
