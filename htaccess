@@ -3,3 +3,7 @@ redirect http to https
   RewriteCond %{HTTP_HOST} ^dominio\.co [NC]
   RewriteCond %{SERVER_PORT} 80
   RewriteRule ^(.*)$ https://dominio/$1 [R,L]
+
+
+bloquear navegación de directorio
+  Options All -Indexes
