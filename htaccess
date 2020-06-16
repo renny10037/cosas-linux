@@ -7,3 +7,5 @@ redirect http to https
 
 bloquear navegación de directorio
   Options All -Indexes
+
+para mas seguridad en wordpress vivitar:https://www.ebooz.com/trucos-con-htaccess-para-aumentar-la-seguridad-en-wordpress/
