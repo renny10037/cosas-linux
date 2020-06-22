@@ -1,2 +1,46 @@
 Instalar Strapi
+  NOTA: suele dar error asi sea usando sudo mejor instalarlo como super usuario desde abrir con permisos administrativos
+
+
   npx create-strapi-app my-project
+  luego elegir unar instalación custom (manual settings) para configurar nuestra base de datos
+  paso:1
+    elegimos nuestro gestor de base datos
+  paso:2 
+    Nombre de la base de datos
+  paso:3
+    host por defecto es 127.0.0.1
+ paso:4
+    port el por defecto
+ paso:5
+    nombre para entrar en tu base de datos
+ paso:6
+    contraseña para tu base de datos
+paso:7
+  enable ssl conecction: en local escribimos n para no
+  
+  si todo funciono te aparecera algo asi:
+  
+  Available commands in your project:
+
+  npm run develop
+  Start Strapi in watch mode.
+
+  npm run start
+  Start Strapi without watch mode.
+
+  npm run build
+  Build Strapi admin panel.
+
+  npm run strapi
+  Display all available commands.
+
+You can start by doing:
+
+  cd /home/renny/Documentos/Javascript/BACKEND/my-project
+  npm run develop
+
+  
+  
+  
+  
