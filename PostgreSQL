@@ -1,9 +1,32 @@
 Ubuntu
 Instalar el paquete de postgresql:
-  sudo apt-get install postgresql
+  sudo apt-get install postgresql-contrib
+
+Entrar
+  sudo -u postgres psql
   
+Cambiar contraseña
+  alter user postgres with password 'postgres';
+  
+Ver base de datos
+  \l
+  
+Salir 
+  \q
+  
+Ver version
+  psql --version
+ 
 interfaz gráfica de postgresql, usa el siguiente comando:
   sudo apt-get install pgadmin3
+
+para usar pgamin3
+  abrir el programa, agregar nueva conexion:
+    Nombre: cualquiera,
+    host: localhost,
+    port: el pro defecto,
+    username: postgres,
+    paswword la que tengas pro lo general esta vacia
   
   
 para mas información: https://doc.odoo.com/7.0/es/install/linux/postgres/
