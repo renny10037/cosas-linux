@@ -1,4 +1,5 @@
 Instalar Strapi
+npx create-strapi-app backend
   NOTA: suele dar error asi sea usando sudo mejor instalarlo como super usuario desde abrir con permisos administrativos
 
 
