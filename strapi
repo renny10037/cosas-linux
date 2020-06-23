@@ -1,4 +1,4 @@
-Instalar Strapi
+#Instalar Strapi
 npx create-strapi-app backend
   NOTA: suele dar error asi sea usando sudo mejor instalarlo como super usuario desde abrir con permisos administrativos
 
@@ -43,7 +43,7 @@ You can start by doing:
 
   
   
-  *Slug strapi
+ ##*Slug strapi
     Primeramente vamos al admin de strapi en content-types creamos una nueva variable de tio UID y la enlazas con l titulo o nombre de la página
     
     asimismo vamos al código fuente de estrapi api/nombreDeTuContentTypes
@@ -72,7 +72,10 @@ You can start by doing:
      en la linea 21 que dice path cambiados :id por :slug
 
 Y listo
-     
+
+
+#Cambiar el editor clasico
+  https://strapi.io/blog/how-to-change-the-wysiwyg-in-strapi
       
       
   
