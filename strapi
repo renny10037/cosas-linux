@@ -81,4 +81,6 @@ Y listo
   al terminar correr npm run strapi build en modo super usuario
       
       
-  
+problema: debug ⛔ Server wasn't able to start properly.
+  error error: column "descripcion" contains null values
+solucion: ir al proyecto / api / carpeta del error / model / el .json abrirlo y editar required: true a required: false 
