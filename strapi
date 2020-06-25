@@ -76,6 +76,8 @@ Y listo
 
 #Cambiar el editor clasico
   https://strapi.io/blog/how-to-change-the-wysiwyg-in-strapi
+  
+  npm install --save @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
   al terminar correr npm run strapi build en modo super usuario
       
       
