@@ -1,0 +1,2 @@
+Error: Cannot find module '../lib/cli'
+para solucionar esto error borrar la carpeta node_modules y ejecturar sudo npm install
