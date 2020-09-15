@@ -1,0 +1,3 @@
+Nota para usarlo nvm es recomendado desintalar node js por completo: sudo apt-get purge --auto-remove nodejs
+instalar nvm https://medium.com/devschile/m%C3%BAltiples-versiones-de-node-con-nvm-63b2ac715c38
+gulp > de wordpress 8.1.4
