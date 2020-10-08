@@ -1,6 +1,6 @@
 Nota para usarlo nvm es recomendado desintalar node js por completo: sudo apt-get purge --auto-remove nodejs
 
-sudo apt install npm -> en tal caso que no se tenga npm
+sudo apt install npm -> en tal caso que no se tenga npm y luego borrar node con el comando de arriba
 npm install curl
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 nvm -> comprar si esta instalado
