@@ -4,9 +4,9 @@ sudo apt update && sudo apt upgrade  //actualizar repo
 
 sudo apt install curl  //instalar curl
 
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash  
-
 curl --version  //version de curl
+
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash  //instalar nvm
 
 
 nvm -> comprar si esta instalado
