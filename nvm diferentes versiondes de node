@@ -1,13 +1,20 @@
 Nota para usarlo nvm es recomendado desintalar node js por completo: sudo apt-get purge --auto-remove nodejs
 
-sudo apt install npm -> en tal caso que no se tenga npm y luego borrar node con el comando de arriba
-npm install curl
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+sudo apt update && sudo apt upgrade  //actualizar repo
+
+sudo apt install curl  //instalar curl
+
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash  
+
+curl --version  //version de curl
+
+
 nvm -> comprar si esta instalado
 nvm list ->lista de versiones
 nvm install <VERSIÓN> ->instalar version
 nvm use <VERSIÓN> -> usar version
 
-Fuente https://medium.com/devschile/m%C3%BAltiples-versiones-de-node-con-nvm-63b2ac715c38
+Fuente: curl: https://www.cyberciti.biz/faq/how-to-install-curl-command-on-a-ubuntu-linux/
+Fuente nvm: https://medium.com/devschile/m%C3%BAltiples-versiones-de-node-con-nvm-63b2ac715c38
 
 gulp > de wordpress 8.1.4
