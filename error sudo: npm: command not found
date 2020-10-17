@@ -1,0 +1,2 @@
+sudo: npm: command not found cuando da este error, correr:
+     sudo apt-get install npm
