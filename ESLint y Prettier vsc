@@ -1,25 +1,20 @@
 Configurar ESLint y Prettier en VSCode para un React Project
-link: https://medium.com/@icruzr93/c%C3%B3mo-configurar-eslint-y-prettier-en-vscode-para-un-proyecto-en-react-5f6324e582a9
+link: https://medium.com/@icruzr93/c%C3%B3mo-configurar-eslint-y-prettier-en-vscode-para-un-proyecto-en-react-5f6324e582a9 ya no sirve
+otro link: https://medium.com/@ravv/setup-eslint-prettier-for-your-react-project-in-2020-2afd56b15c84
 
-
-
-instalamos las extensiones de prettier y eslint.
-  npm i prettier eslint-config-prettier eslint-plugin-prettier -D
-  
-  
-Finalmente en la raíz de tu proyecto crea un archivo llamado .eslintrc y añade el siguiente contenido.
-
-{  
-  "extends": ["react-app", "plugin:prettier/recommended"]
+{
+  "terminal.integrated.shell.linux": "/bin/zsh",
+  "terminal.integrated.rendererType": "dom",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "window.zoomLevel": 0,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "eslint.alwaysShowStatus": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "workbench.settings.enableNaturalLanguageSearch": false
 }
 
-Nos vamos a la sección de instalar extensiones y buscamos ESLint y Prettier para finalmente darle click en install.
-
-pegar esto es la configuraciòn de visual estudio code
-
-"editor.formatOnPaste": true,
-"editor.formatOnSave": true,
-"editor.formatOnType": true,
-"prettier.eslintIntegration": true
-
-y listo
