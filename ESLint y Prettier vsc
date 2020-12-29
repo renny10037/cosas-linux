@@ -18,3 +18,39 @@ otro link: https://medium.com/@ravv/setup-eslint-prettier-for-your-react-project
   "workbench.settings.enableNaturalLanguageSearch": false
 }
 
+
+
+
+para eliminar error: react must be in scope when using jsx
+colocar en .eslintrc "react/react-in-jsx-scope": "off",
+
+Quedaria asi:
+module.exports = {
+    extends: [
+      'plugin:react/recommended',
+      'plugin:react-hooks/recommended',
+      'plugin:prettier/recommended',
+    ],
+    env: {
+      es6: true,
+      node: true,
+      browser: true,
+    },
+    parserOptions: {
+      ecmaVersion: 8,
+      sourceType: 'module',
+      ecmaFeatures: {
+        jsx: true,
+      },
+    },
+    ignorePatterns: ['/node_modules/**', '/build/**'],
+    rules: {
+      "react/react-in-jsx-scope": "off",
+      'no-unused-vars': ['warn', { args: 'none', argsIgnorePattern: 'req|res|next|val' }],
+      'prettier/prettier': ['error'],
+    },  settings: {
+      react: {
+        version: 'detect',
+      },
+    },
+  };
