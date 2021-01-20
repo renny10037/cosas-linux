@@ -1,0 +1,29 @@
+<?php
+/*
+* Plugin Name: event contact form 7 pixel facebook
+* Plugin URI: https://www.github.com/rennypetit
+* Description: agregar el evento de pixel facebook al enviar el formulario de contact form 7
+* Version: 1.1
+* Author: Renny petit
+* Author URI: https://www.github.com/rennypetit
+* License: GPL2
+*/
+
+add_action('wp_footer', 'mycustom_wp_footer');
+
+function mycustom_wp_footer()
+{
+?>
+<script type="text/javascript">
+const url = window.location.pathname;
+document.addEventListener('wpcf7mailsent', function(event) {
+        history.pushState(null, "", "thank-you");
+        fbq('track', 'Lead');
+        gtag('event', 'conversion', {
+            'send_to': 'AW-'
+        });
+ 
+}, false);
+</script>
+<?php
+}
