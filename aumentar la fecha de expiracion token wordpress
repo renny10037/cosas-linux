@@ -1,0 +1,5 @@
+//un dia = 86400 segundos; y 10 años = 3650 dias
+	function test_jwt_auth_expire($issuedAt) {
+		return time() + (86400 * 3650);
+		}
+		add_action('jwt_auth_expire', 'test_jwt_auth_expire');
