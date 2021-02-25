@@ -9,8 +9,8 @@ cabecera HTTP de seguridad
       header( 'X-Content-Type-Options: nosniff' );
       header( 'X-Frame-Options: SAMEORIGIN' );
       header( 'X-XSS-Protection: 1;mode=block' );
-      header( 'trict-Transport-Security: max-age=10886400' );
-      header( 'ontent-Security-Policy: default-src self' );
+      header( 'strict-Transport-Security: max-age=10886400' );
+      header( 'content-Security-Policy: default-src self' );
   }
 
 deshabilitar XML-RPC (con un plugin sirve)
