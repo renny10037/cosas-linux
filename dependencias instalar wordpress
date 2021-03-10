@@ -15,9 +15,10 @@ Option 2: (replace YOUR_SYSTEM_USER with the username you have)
 
 $ sudo mysql -u root # I had to use "sudo" since is new installation
 
-mysql> USE mysql;
-mysql> create user admin@localhost identified by 'admins_password';
-mysql> flush privileges;
-mysql> exit;
+USE mysql;
+CREATE USER 'user'@'localhost' IDENTIFIED BY 'P@ssW0rd';
+GRANT ALL ON *.* TO 'user'@'localhost';
+FLUSH PRIVILEGES;
+exit;
 
 $ service mysql restart
