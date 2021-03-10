@@ -16,10 +16,8 @@ Option 2: (replace YOUR_SYSTEM_USER with the username you have)
 $ sudo mysql -u root # I had to use "sudo" since is new installation
 
 mysql> USE mysql;
-mysql> CREATE USER 'YOUR_SYSTEM_USER'@'localhost' IDENTIFIED BY '';
-mysql> GRANT ALL PRIVILEGES ON *.* TO 'YOUR_SYSTEM_USER'@'localhost';
-mysql> UPDATE user SET plugin='auth_socket' WHERE User='YOUR_SYSTEM_USER';
-mysql> FLUSH PRIVILEGES;
+mysql> create user admin@localhost identified by 'admins_password';
+mysql> flush privileges;
 mysql> exit;
 
 $ service mysql restart
