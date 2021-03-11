@@ -18,3 +18,5 @@ Fuente: curl: https://www.cyberciti.biz/faq/how-to-install-curl-command-on-a-ubu
 Fuente nvm: https://medium.com/devschile/m%C3%BAltiples-versiones-de-node-con-nvm-63b2ac715c38
 
 gulp > de wordpress 8.1.4
+
+problema con nvm para borrar o algo usar en la terminal: export NVM_DIR="$INSTALL_DIR"
