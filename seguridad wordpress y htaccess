@@ -1,0 +1,54 @@
+redireccionamiento 301 de una página a otra
+  redirectMatch 301 ^(.*)$ http://dominiodeejemplo.com$1
+
+
+#segurity
+Options All -Indexes
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>
+
+<Files wp-config.php>
+    order allow,deny
+    deny from all
+</Files>
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK|HEAD)
+RewriteRule .* - [F]
+
+<Files xmlrpc.php>
+Order Deny,Allow
+Deny from all
+</Files> 
+
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+plugin seguridad:
+Disable WP REST API
+Disable XML-RPC-API
+WP Hide & Security Enhancer
+Wordfence Security
+
+archivos:
+.htaccess, wp-config permiso 444
+licence,readme,xmlrcp permisos 600
+
+
+cabeceras:
+add_action( 'send_headers', 'add_header_seguridad' );
+function add_header_seguridad() { 
+header( 'X-Content-Type-Options: nosniff' );
+header( 'X-Frame-Options: SAMEORIGIN' );
+header( 'X-XSS-Protection: 1;mode=block' );
+header( 'Referrer-Policy: no-referrer' );
+header( 'Strict-Transport-Security: max-age=10886400' );
+header( 'Permissions-Policy: geolocation=(self "https://tudominio.com")' );
+}
+
