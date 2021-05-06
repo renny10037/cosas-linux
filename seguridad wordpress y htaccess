@@ -52,3 +52,10 @@ header( 'Strict-Transport-Security: max-age=10886400' );
 header( 'Permissions-Policy: geolocation=(self "https://tudominio.com")' );
 }
 
+
+Página para comprobar cabeceras xmlrpc: https://xmlrpc.eritreo.it/
+    Congratulation! Your site passed the first check. (quiere deci que esta abierto se debe cerrar)
+    ailed to check your site at https://sisenoragencia.com because of the following error:(esta bien, esta cerrado)
+
+
+analizar cabeceras: https://securityheaders.com/
