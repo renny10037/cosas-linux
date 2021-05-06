@@ -1,6 +1,11 @@
 redireccionamiento 301 de una página a otra
   redirectMatch 301 ^(.*)$ http://dominiodeejemplo.com$1
 
+wp-config
+  @ini_set('session.cookie_httponly', true);
+  @ini_set('session.cookie_secure', true);
+  @ini_set('session.use_only_cookies', true);
+
 
 #segurity
 Options All -Indexes
