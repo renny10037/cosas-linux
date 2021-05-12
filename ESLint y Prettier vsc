@@ -54,3 +54,52 @@ module.exports = {
       },
     },
   };
+
+
+
+
+
+
+
+
+
+
+
+
+eslint nuevo:
+  npm i eslint -D
+inicializar y crear reglas automaticamente: 
+  npmx eslint --init
+  
+  
+  
+eslintsrc.js
+
+module.exports = {
+	env: {
+		browser: true,
+		es2021: true,
+		node: true,
+	},
+	extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
+	parserOptions: {
+		ecmaFeatures: {
+			jsx: true,
+		},
+		ecmaVersion: 12,
+		sourceType: 'module',
+	},
+	ignorePatterns: ['/node_modules/**', '/build/**'],
+	rules: {
+		'react/react-in-jsx-scope': 'off',
+		'no-unused-vars': [
+			'warn',
+			{ args: 'none', argsIgnorePattern: 'req|res|next|val' },
+		],
+		'prettier/prettier': ['error'],
+	},
+	plugins: ['react'],
+};
+
+
+
